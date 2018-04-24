@@ -1,0 +1,21 @@
+    <html>
+      <head>
+        <title>Project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
+      <body>
+        <h1>Data Classifier</h1>
+      </body>
+    </html>
+
+<form action="/predict" method="post" enctype="multipart/form-data">
+  <input type="file" name="csv" value="Upload">
+  <input type="submit" value="Predict"> {% if label %} {{ label }} {% endif %}
+</form>
+
+<form action="/test" method="post" enctype="multipart/form-data">
+  <input type="text" name="label1" value="label">
+  <input type="text" name="data1" value="data">
+  <input type="submit" value="test"> {% if label11 %} {{ label11 }} {% endif %}
+</form>
